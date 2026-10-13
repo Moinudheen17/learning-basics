@@ -47,3 +47,19 @@ function isAlpha(string){
     return false
   }
 }
+function isNumeric(string){
+  let no = "1234567890"
+  let nu = ""
+  for (let char of string){
+    if( no.includes(char)=== true){
+      nu = nu + char
+    }
+    continue
+  }
+  if ( nu === string){
+    return true
+  }
+  else{
+    return false
+  }
+}  
