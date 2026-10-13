@@ -30,3 +30,20 @@ function isAlphanumeric(string){
     return false
   }
 }
+function isAlpha(string){
+  let w = string.toLowerCase()
+  let result = ""
+  let alp = "abcdefghijklmnopqrstuvwxyz"
+  for (let char of w) {
+    if(alp.includes(char)=== true){
+      result = result + char
+    }
+    continue
+  }
+  if (result === w){
+    return true
+  }
+    else {
+    return false
+  }
+}
